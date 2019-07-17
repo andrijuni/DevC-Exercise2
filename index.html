@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="script.js"></script>
 <head>
     <title>Exercise 2</title>
 </head>
 <body>
     <center>
         <h1>Kalkulator</h1>
+        <table border="1">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="nilai" placeholder="Masukan Nilai">
+                </td>
+            </tr>
+            <tr>
+                <th><button class="numb" onclick="nomor('1')">1</button></th>
+                <th><button class="numb" onclick="nomor('2')">2</button></th>
+                <th><button class="numb" onclick="nomor('3')">3</button></th>
+                <th><button class="aritmatika" onclick="aritmatika(' + ')">+</button></th>
+            </tr>
+            <tr>
+                <th><button class="numb" onclick="nomor('4')">4</button></th>
+                <th><button class="numb" onclick="nomor('5')">5</button></th>
+                <th><button class="numb" onclick="nomor('6')">6</button></th>
+                <th><button class="aritmatika" onclick="aritmatika(' - ')">-</button></th>
+            </tr>
+            <tr>
+                <th><button class="numb" onclick="nomor('7')">7</button></th>
+                <th><button class="numb" onclick="nomor('8')">8</button></th>
+                <th><button class="numb" onclick="nomor('9')">9</button></th>
+                <th><button class="aritmatika" onclick="aritmatika(' * ')">x</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="kosong()">C</button></th>
+                <th><button class="numb" onclick="nomor('0')">0</button></th>
+                <th><button onclick="hasil()">=</button></th>
+                <th><button class="aritmatika" onclick="aritmatika(' / ')"  >/</button></th>
+            </tr>
+        </table>
+        <p>2019 &copy; Andri Juni</p>
     </center>
 </body>
 </html>
